@@ -50,7 +50,7 @@ body {
 /* HEADER MOBILE STYLES */
 @media screen and (min-width: 320px) {
   .container {
-    width: 288px;
+    max-width: 288px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -211,12 +211,13 @@ body {
   }
 }
 
+
 /* / HEADER MOBILE STYLE */
 
 /* HEADER TABLET */
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -244,6 +245,7 @@ body {
 
   .adr {
     display: flex;
+
   }
 
   .nav-list {
@@ -299,7 +301,7 @@ body {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -327,9 +329,9 @@ body {
 }
 /* /DESKTOP HEADER */
 
-/* HERO */
+/* MAIN CONTENT */
 
-/* SECTION 1 MOBILE STYLE */
+/* HERO MOBILE STYLE */
 .hero {
   max-width: 320px;
   margin: 0 auto;
@@ -389,9 +391,9 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* / SECTION 1 MOBILE STYLE */
+/* / HERO MOBILE STYLE */
 
-/* SECTION 1 TABLET STYLE */
+/* HERO TABLET STYLE */
 
 @media screen and (min-width: 768px) {
   .hero {
@@ -433,10 +435,10 @@ body {
     padding:0;
   }
   }
-/* /SECTION 1 TABLET STYLE */
+/* /HERO TABLET STYLE */
 
 
-/* SECTION 1 DESKTOP STYLE */
+/* HERO DESKTOP STYLE */
 
 @media screen and (min-width: 1158px) {
   .hero-title {
@@ -477,9 +479,9 @@ body {
   }
   }
 
-/* / SECTION 1 DESKTOP STYLE */
+/* / HERO DESKTOP STYLE */
 
-/* SECTION 2 MOBILE STYLE */
+/* BNEFITS MOBILE STYLE */
 .benefits {
   padding: 96px 0;
 }
@@ -496,7 +498,7 @@ body {
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.11; /* 120% */
+  line-height: 1.11; 
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 8px;
@@ -504,15 +506,16 @@ body {
 .benef-text {
   align-self: stretch;
   font-size: 16px;
+  font-style: normal;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5; 
   letter-spacing: 0.02em;
 }
-/* / SECTION 2 MOBILE STYLE */
+/* / BENEFITS MOBILE STYLE */
 
 
 
-/* SECTION 2 TABLET STYLE */
+/* BENEFITS TABLET STYLE */
 
 @media screen and (min-width: 768px){
   .benef-title {
@@ -534,10 +537,10 @@ body {
 
 }
 
-/* / SECTION 2 TABLET STYLE */
+/* / BENEFITS TABLET STYLE */
 
 
-/* SECTION 2 DESKTOP STYLE */
+/* BENEFITS DESKTOP STYLE */
 
 @media screen and (min-width: 1158px) {
   .benefits {
@@ -560,20 +563,24 @@ body {
   }
   .benef-text {
     width:264px;
+    font-weight: 400;
   }
 }
-/* / SECTION 2 DESKTOP STYLE */
+/* / BENEFITS DESKTOP STYLE */
 
 
-/* SECTION 3 MOBILE STYLE */
-.team-container {
-  width:264px;
-}
+/* TEAM MOBILE STYLE */
 .team {
   background: #f4f4fd;
   padding: 96px 0;
-  width:320px;
-  position:fixed;
+  /* width:320px; */
+  /* position:fixed; */
+}
+
+.team-container {
+   max-width:264px;
+   margin-left: auto;
+  margin-right: auto;
 }
 .team-main-title {
   color: #2e2f42;
@@ -588,8 +595,8 @@ body {
 .team-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-}
+  gap: 72px;
+} 
 .team-item {
   background-color: #ffffff;
   
@@ -612,7 +619,7 @@ body {
   margin-bottom: 8px;
   text-align: center;
 }
-.team-descr {
+ .team-descr {
   color: #434455;
   text-align: center;
   font-size: 16px;
@@ -621,7 +628,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 8px;
-}
+} 
 .team-links {
   display: flex;
   justify-content: center;
@@ -643,42 +650,49 @@ body {
   fill: #f4f4fd;
 }
 
-/* / SECTION 3 MOBILE STYLE */
-/* SECTION 3 TABLET STYLE */
+/* / TEAM MOBILE STYLE */
+
+
+/* TEAM TABLET STYLE */
 @media screen and (min-width: 768px) {
+  
+
   .team {
-    min-width: 768px;
+    width: 100%;
     
   }
-  .team-container {
-    width: 553px;
+  .container {
     padding: 0;
+  }
+  .team-container {
+    min-width: 553px;
+    
   }
   .team-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 64px;
+    row-gap: 64px; 
+    column-gap:24px;
   }
   .team-item {
     width: calc((100% - 24px) / 2);
   }
 }
 
-/* / SECTION 3 TABLET STYLE */
+/* / TEAM TABLET STYLE */
 
-/* SECTION 3 DESKTOP STYLE */
+/* TEAM DESKTOP STYLE */
 @media screen and (min-width: 1158px) {
   .team {
     padding: 120px 0;
-    width:1440px;
+    min-width: 1440;
   } 
-  .team-container {
-   width:1128px;
+  .container.team-container {
+    min-width:1128px;
+  
   }
-.team-list {
-
-}
+  
 .team-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
@@ -687,15 +701,6 @@ body {
 .team-links-item:focus {
   background-color: #404bbf;
 }
-.team {
-  min-width:1158px;
-  max-width:1440px;
-  padding: 120px 0;
-} 
-
-
-
-
 
 }
 
