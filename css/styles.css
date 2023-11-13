@@ -782,6 +782,7 @@ height: 300px;
   }
 
   .overlay-text {
+    display: block;
     color: #f4f4fd;
     font-size: 16px;
     font-weight: 400;
@@ -1050,10 +1051,6 @@ width: 165px;
   background:#404bbf;
   cursor: pointer;
 }
-
-
-
-
 }
 
 
