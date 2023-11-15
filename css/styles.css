@@ -679,6 +679,7 @@ letter-spacing: 0.02em;
   }
   .container.team-container {
     min-width: 1128px;
+    padding: 0;
   }
 
   .team-item {
@@ -698,7 +699,7 @@ letter-spacing: 0.02em;
   padding: 96px 0;
 }
 .portfolio-container {
-  padding: 0;
+  padding: 0 16px;
 }
 
 .portfolio-main-title {
