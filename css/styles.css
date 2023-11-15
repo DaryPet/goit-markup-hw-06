@@ -1218,6 +1218,10 @@ width: 165px;
   line-height: 1.17; 
   letter-spacing: 0.04em;
   margin-bottom: 24px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+ 
 }
 .checkbox-own-wrapper {
   width: 16px;
@@ -1232,6 +1236,7 @@ width: 165px;
   justify-content: center;
   fill: transparent;
   cursor: pointer;
+  flex-shrink: 0;
 }
 .checkbox-own-wrapper:checked {
   background-color: #404bbf;
@@ -1247,7 +1252,7 @@ width: 165px;
 .privacy-policy-link {
   color: #4d5ae5;
   text-decoration: underline;
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
 
 .form-submit-btn {
